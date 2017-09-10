@@ -21,6 +21,10 @@ import java.applet.*;
             jeroen = 100;
         }
         public void paint(Graphics g){
+            
+            Graphics2D graphics2D = (Graphics2D) g;
+            graphics2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
+                    RenderingHints.VALUE_ANTIALIAS_ON);
 
             //DiagramBase
             g.drawLine(50,nullijn,320,nullijn);
