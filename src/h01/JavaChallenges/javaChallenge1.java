@@ -1,24 +1,19 @@
 package JavaChallenges;
 
-        import com.sun.corba.se.spi.activation.ActivatorOperations;
-
-        import javax.swing.*;
         import java.awt.*;
         import java.applet.*;
         import java.awt.event.ActionEvent;
         import java.awt.event.ActionListener;
 
 public class javaChallenge1 extends Applet{
-    Label label;
-    TextField tekstvak;
-    Button knop;
-    int input, london,tokyo,newYork,sydney;
-    int x,y;
+    private TextField tekstvak;
+    private int input, london,tokyo,newYork,sydney;
+    private int x,y;
 
     public void init(){
-        label = new Label("Voer een uur in");
+        Label label = new Label("Voer een uur in");
         tekstvak = new TextField(2);
-        knop = new Button("Toon Tijden");
+        Button knop = new Button("Toon Tijden");
         add(label);
         add(tekstvak);
         add(knop);
