@@ -1,16 +1,11 @@
 package JavaChallenges;
 
-import com.sun.corba.se.spi.activation.ActivatorOperations;
-
-import javax.swing.*;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class javaChallenge0 extends Applet {
-    Label labelValerie, labelHans, labelJeroen;
-    private Button knop;
     private TextField inputValerie, inputHans, inputJeroen;
     private int input1, input2, input3;
     private int nullijn;
@@ -27,10 +22,10 @@ public class javaChallenge0 extends Applet {
         inputValerie = new TextField();
         inputHans = new TextField();
         inputJeroen = new TextField();
-        knop = new Button("Toon");
-        labelValerie = new Label("Valerie");
-        labelHans = new Label("Hans");
-        labelJeroen = new Label("Jeroen");
+        Button knop = new Button("Toon");
+        Label labelValerie = new Label("Valerie");
+        Label labelHans = new Label("Hans");
+        Label labelJeroen = new Label("Jeroen");
         add(labelValerie);
         add(inputValerie);
         add(labelHans);
